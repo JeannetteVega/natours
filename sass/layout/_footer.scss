@@ -43,6 +43,15 @@
 		&:not(:last-child) {
 			margin-right: 1.5rem;
 		}
+
+		@include respond(phone) { 
+			display: block;
+			margin-bottom: 10px;
+
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+	    }
 	}
 
 	&__link {
@@ -73,6 +82,7 @@
 		@include respond(tab-port) {
 			width: 100%;
 			float: none;
+			text-align: center;
 	    }
 	}
 }
